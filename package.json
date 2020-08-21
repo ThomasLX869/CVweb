@@ -1,0 +1,22 @@
+{
+  "name": "cvweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasLX869/CVweb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThomasLX869/CVweb/issues"
+  },
+  "homepage": "https://github.com/ThomasLX869/CVweb#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
