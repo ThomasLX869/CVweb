@@ -5,54 +5,138 @@
   <head>
 
     <!-- Required meta tags -->
-
+    
     <title>Thomas Lescieux | Etudiant Développeur web - Lyon</title>
     <meta name="description" content="Je suis Thomas Lescieux,j'ai 25 ans, je suis en recherche d'une entreprise d'accueil sur Lyon pour effectuer une alternance, voici mon site web portfolio et CV" />
     <meta name="author" content="Thomas Lescieux" />
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
     <meta http-equiv="content-type" content="text/html"/>
     <meta name="language" content="fr" />
     <meta name="robots" content="index,follow" />
-    <link rel="canonical" href="http://" />
-    <link rel="icon" type="image/png" href="" />
+    <!-- <link rel="canonical" href="http://" />
+    <link rel="icon" type="image/png" href="" /> -->
 
 
     <!-- OpenGraph meta tags -->
 
     <meta property="og:locale" content="fr_FR" />
-	<meta property="og:image" content="" />
+	<!-- <meta property="og:image" content="" /> -->
 	<meta property="og:image:width" content="100%" />
 	<meta property="og:image:height" content="100%" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="" />
+	<!-- <meta property="og:url" content="" /> -->
 	<meta property="og:title" content="Développeur web" />
     <meta property="og:description" content="Développeur web  et créateur de site internet. Développement web, création ou refonte de site internet, intégration, référencement, etc." />
-    <meta property="og:site-name" content="" />
+    <!-- <meta property="og:site-name" content="" /> -->
     
 
     <!-- CSS & Framework -->
 
     <link rel="stylesheet" href="css/style.css" />
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
- 
+
+
+
+    <!-- Responsive -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   </head>
 
   <body>
 
-    <div>
-         <div style="position:absolute">
-            <img src="images/wallpaper.jpg" class="img-window-size" style alt="Background laptop">
-            <h1>Bonjour je suis </h1>
+    <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                        <img src="images/wallpaper.jpg" class="img-fluid" alt="wallpaper setup"/>
+                </div>
+            </div>
         </div>
-        <div style="position:absolute">
-            <h1>Je suis</br>En recherche d'une entreprise d'acceuil </br> Pour une alternance en tant que développeur web</h1>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <p class="text-center">
+                            <h1>Thomas Lescieux</h1>
+                            <br/>
+                            <span>Alternant développeur web à Lyon</span>
+                            <br/>
+                            <span>En recherche d'une entreprise d'accueil !</span>
+                    </p>
+                </div>
+            </div>
         </div>
+    </div>
+
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col">
+                <span>Thomas Lescieux</span>
+                <br/>
+                <span>Alternant développeur web à Lyon</span>
+                <br/>
+                <span>En recherche d'une entreprise d'accueil !</span>
+            </div>
+        </div>
+    </div> -->
+    
+    <!-- <div class ="container">
+        <div class="divider"></div>
+        <div class="heading">
+            <h2>Contactez-moi</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" role="form">
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <label for="firstname">Prénom<span class="blue"> *</span></label>
+                            <input type = "text" id="firstname" name="firstname" required class="form-control" placeholder="Votre prénom" value="<?php echo $firstname;?>">
+
+                            <p class="comments"><?php echo $firstnameError; ?></p>
+                        </div>
 
 
+                        <div class="col-md-6">
+                            <label for="name">Nom<span class="blue"> *</span></label>
+                            <input type = "text" id="name" name="name" required class="form-control" placeholder="Votre nom" value="<?php echo $name;?>">
+                            <p class="comments"><?php echo $nameError; ?></p></p>
+                        </div>
 
-    </div> 
+                        <div class="col-md-6">
+                            <label for="email">Email<span class="blue"> *</span></label>
+                            <input type = "email" id="email" name="email" required class="form-control" placeholder="Votre Email" value="<?php echo $email;?>">
+                            <p class="comments"><?php echo $emailError; ?></p></p>
+                        </div>
+
+                        <div class="col-md-6">
+                            <label for="phone">Téléphone</label>
+                            <input type = "tel" id="phone" name="phone" class="form-control" placeholder="Votre téléphone" value="<?php echo $phone;?>">
+                            <p class="comments"><?php echo $phoneError; ?></p></p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="message">Message<span class="blue"> *</span></label>
+                            <textarea id="message" name="message" required class="form-control" placeholder="Votre message" rows="4"><?php echo $message; ?></textarea> 
+                            <p class="comments"><?php echo $messageError; ?></p></p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <p class="blue"><strong>* Ces informations sont requises</strong></p>
+                        </div>
+
+                        <div class="col-md-12">
+                            <input type="submit" class="button1" value="Envoyer">
+                        </div>
+
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div> -->
 
     <!-- <div class="bg-primary">
         <div class="container">
@@ -76,12 +160,5 @@
             </div>
         </div> 
     </div> -->
-
-
-    
-
-    
-
   </body>
-
 </html>
