@@ -1,28 +1,16 @@
 @charset "UTF-8";
-.container,
-.container-fluid,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-  width: 100%;
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: auto;
-  margin-left: auto;
+.presentationTextFirst {
+  font-weight: 400;
+  line-height: 2;
+  font-size: 3rem;
+  color: linen;
 }
 
-.container,
-.container-fluid,
-.container-xl,
-.container-lg,
-.container-md,
-.container-sm {
-  width: 10%;
-  padding-right: 0px;
-  padding-left: 0px;
-  margin-right: auto;
-  margin-left: auto;
+.presentationTextSecond {
+  font-weight: 350;
+  line-height: 2;
+  font-size: 2rem;
+  color: linen;
 }
 
 /*!

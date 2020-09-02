@@ -8,7 +8,6 @@
     
     <title>Thomas Lescieux | Etudiant Développeur web - Lyon</title>
     <meta name="description" content="Je suis Thomas Lescieux,j'ai 25 ans, je suis en recherche d'une entreprise d'accueil sur Lyon pour effectuer une alternance, voici mon site web portfolio et CV" />
-    <meta name="author" content="Thomas Lescieux" />
     <meta charset="utf-8"/>
     <meta http-equiv="content-type" content="text/html"/>
     <meta name="language" content="fr" />
@@ -21,8 +20,6 @@
 
     <meta property="og:locale" content="fr_FR" />
 	<!-- <meta property="og:image" content="" /> -->
-	<meta property="og:image:width" content="100%" />
-	<meta property="og:image:height" content="100%" />
 	<meta property="og:type" content="website" />
 	<!-- <meta property="og:url" content="" /> -->
 	<meta property="og:title" content="Développeur web" />
@@ -37,7 +34,7 @@
 
 
 
-    <!-- Responsive lol-->
+    <!-- Responsive -->
     
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -45,28 +42,40 @@
 
   <body>
 
-    <div class="container-fluid">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                        <img src="images/wallpaper.jpg" class="img-fluid" alt="wallpaper setup"/>
+    <div class="container-fluid" id="globalContainer" style="padding:0;max-width: 100vw; height: 100;">
+
+
+        <div class="container-fluid" id="firstPageContainers" style="padding:0;max-width: 100vw; max-height: 100vh;">
+
+            <div class="container-fluid" id="imageContainer" style="position:absolute;z-index:1;padding:0;">
+                <div class="row" style="margin:0">
+                    <div class="col" style="padding:0">
+                        <img src="images/wallpaper.jpg" class="img-fluid" style="width: 100%; height: 100vh;  filter:brightness(57%);">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid h-100" id="presentationMyself" style="padding:0; position:absolute;z-index:2;">
+                <div class="row h-100" style="align-items: center; margin:0 ">
+                    <div class="col text-center" style="padding:0">
+                        <p class="text-center" class="presentationTextFirst">
+                                <span  class="presentationTextFirst" id="nameTextPresentation">Thomas Lescieux</span>
+                                <br/>
+                                <span  class="presentationTextSecond" id="secondTextPresentation">Alternant développeur web à Lyon
+                                <br/>
+                                Recherche une entreprise d'accueil</span>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <p class="text-center">
-                            <h1>Thomas Lescieux</h1>
-                            <br/>
-                            <span>Alternant développeur web à Lyon</span>
-                            <br/>
-                            <span>En recherche d'une entreprise d'accueil !</span>
-                    </p>
-                </div>
-            </div>
-        </div>
+
     </div>
+
+
+
+
+    
 
     <!-- <div class="container">
         <div class="row">
