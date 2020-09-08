@@ -42,132 +42,60 @@
 
   <body>
 
-    <div class="container-fluid" id="globalContainer" style="padding:0;max-width: 100vw; height: 100;">
+    <div class="container-fluid" id="globalContainer" style="padding:0;max-width: 100vw; height: 100">
 
 
-        <div class="container-fluid" id="firstPageContainers" style="padding:0;max-width: 100vw; max-height: 100vh;">
-
-            <div class="container-fluid" id="imageContainer" style="position:absolute;z-index:1;padding:0;">
-                <div class="row" style="margin:0">
-                    <div class="col" style="padding:0">
-                        <img src="images/wallpaper.jpg" class="img-fluid" style="width: 100%; height: 100vh;  filter:brightness(57%);">
-                    </div>
+        <div class="container-fluid" id="firstPageContainers" style="position: relative; padding:0;max-width: 100vw; max-height: 100vh;">
+            <div class="row" style="margin:0">
+                <div class="col" style="padding:0">
+                    <img src="images/wallpaper.jpg" class="img-fluid" style="width: 100%; height: 100vh;  filter:brightness(57%);">
                 </div>
             </div>
+            <div class="row" style="position: absolute; top:40%; left:50%; transform:translate(-50%,-50%); margin:0">
+                <div class="col text-center">
+                    <p class="presentationTextFirst">
 
-            <div class="container-fluid h-100" id="presentationMyself" style="padding:0; position:absolute;z-index:2;">
-                <div class="row h-100" style="align-items: center; margin:0 ">
-                    <div class="col text-center" style="padding:0">
-                        <p class="text-center" class="presentationTextFirst">
-                                <span  class="presentationTextFirst" id="nameTextPresentation">Thomas Lescieux</span>
-                                <br/>
-                                <span  class="presentationTextSecond" id="secondTextPresentation">Alternant développeur web à Lyon
-                                <br/>
-                                Recherche une entreprise d'accueil</span>
-                        </p>
-                    </div>
+                        <h1 class="ml11">
+                          <span class="text-wrapper">
+                            <span class="line line1"></span>
+                            <span class="letters">Thomas Lescieux</span>
+                        </h1>
+
+  
+                          <span  class="presentationTextSecond" id="secondTextPresentation">Alternant développeur web à Lyon
+                          </br>
+                          Recherche une entreprise d'accueil</span>
+                    </p>
                 </div>
             </div>
         </div>
 
+
+
+        <div class="container-fluid" id="test">
+            <div class="row" style="margin:0">
+                <div class="col text-center" style="padding:0">
+                    <p>
+                        <h1 class="ml11">
+                            <span class="text-wrapper">
+                              <span class="line line1"></span>
+                              <span class="letters">Hello Goodbye</span>
+                            </span>
+                        </h1>                       
+                    </p>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
 
+    <!-- TEST ANIMATION -->
 
+       
 
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="animation.js"></script>
 
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col">
-                <span>Thomas Lescieux</span>
-                <br/>
-                <span>Alternant développeur web à Lyon</span>
-                <br/>
-                <span>En recherche d'une entreprise d'accueil !</span>
-            </div>
-        </div>
-    </div> -->
-    
-    <!-- <div class ="container">
-        <div class="divider"></div>
-        <div class="heading">
-            <h2>Contactez-moi</h2>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1">
-                <form id="contact-form" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" role="form">
-                    <div class="row">
-
-                        <div class="col-md-6">
-                            <label for="firstname">Prénom<span class="blue"> *</span></label>
-                            <input type = "text" id="firstname" name="firstname" required class="form-control" placeholder="Votre prénom" value="<?php echo $firstname;?>">
-
-                            <p class="comments"><?php echo $firstnameError; ?></p>
-                        </div>
-
-
-                        <div class="col-md-6">
-                            <label for="name">Nom<span class="blue"> *</span></label>
-                            <input type = "text" id="name" name="name" required class="form-control" placeholder="Votre nom" value="<?php echo $name;?>">
-                            <p class="comments"><?php echo $nameError; ?></p></p>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="email">Email<span class="blue"> *</span></label>
-                            <input type = "email" id="email" name="email" required class="form-control" placeholder="Votre Email" value="<?php echo $email;?>">
-                            <p class="comments"><?php echo $emailError; ?></p></p>
-                        </div>
-
-                        <div class="col-md-6">
-                            <label for="phone">Téléphone</label>
-                            <input type = "tel" id="phone" name="phone" class="form-control" placeholder="Votre téléphone" value="<?php echo $phone;?>">
-                            <p class="comments"><?php echo $phoneError; ?></p></p>
-                        </div>
-
-                        <div class="col-md-12">
-                            <label for="message">Message<span class="blue"> *</span></label>
-                            <textarea id="message" name="message" required class="form-control" placeholder="Votre message" rows="4"><?php echo $message; ?></textarea> 
-                            <p class="comments"><?php echo $messageError; ?></p></p>
-                        </div>
-
-                        <div class="col-md-12">
-                            <p class="blue"><strong>* Ces informations sont requises</strong></p>
-                        </div>
-
-                        <div class="col-md-12">
-                            <input type="submit" class="button1" value="Envoyer">
-                        </div>
-
-                    </div>
-
-
-                </form>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- <div class="bg-primary">
-        <div class="container">
-            <div class="row">
-                <nav class="col navbar navbar-expand-lg bg-primary navbar-dark">
-                    <a class="navbar-brand" href="index.html"><img src="images/LogoCVweb.jpg" width=40 height =30 alt="Site logo"> Thomas LESCIEUX</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div id="navbarContent" class="collapse navbar-collapse">
-                        <ul class="navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">Accueil</a>
-                            </li>
-                            <li class="navbar-item">
-                                <a class="nav-link" href="cours.html">Cours</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </div> 
-    </div> -->
   </body>
 </html>
