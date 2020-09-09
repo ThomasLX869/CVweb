@@ -1,51 +1,59 @@
 @charset "UTF-8";
-.presentationTextFirst {
-  text-align: center;
-  font-weight: 400;
-  line-height: 2;
-  font-size: 3rem;
-  color: linen;
-  margin-bottom: 0%;
-}
-
-.presentationTextSecond {
-  font-weight: 300;
-  line-height: 2;
-  font-size: 2rem;
-  color: linen;
-}
-
 #globalContainer {
   display: flex;
   flex-direction: column;
 }
 
-.ml11 .text-wrapper {
+.anim-name-text .text-wrapper {
   position: relative;
   display: inline-block;
-  font-weight: 400;
-  font-size: 3rem;
+  font-weight: 550;
+  font-size: 3.5rem;
   line-height: 1;
-  font-size: 3rem;
   color: linen;
-  margin-bottom: 2rem;
-}
-
-.ml12 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 1;
-  font-size: 3rem;
-  color: linen;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .line {
   position: absolute;
   height: 100%;
   width: 3px;
+  background-color: linen;
+  transform-origin: 0 50%;
+}
+
+.anim-presentation-text .text-wrapper {
+  position: relative;
+  display: inline-block;
+  font-weight: 250;
+  font-size: 2rem;
+  line-height: 1;
+  color: linen;
+  margin-bottom: 2rem;
+}
+
+.line2 {
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: linen;
+  transform-origin: 0 50%;
+}
+
+.anim-presentation-text2 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  font-weight: 250;
+  font-size: 2rem;
+  line-height: 1;
+  color: linen;
+  margin-bottom: 2rem;
+}
+
+.line3 {
+  position: absolute;
+  height: 100%;
+  width: 2px;
   background-color: linen;
   transform-origin: 0 50%;
 }
