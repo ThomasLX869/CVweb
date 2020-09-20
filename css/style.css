@@ -2,6 +2,30 @@
 #globalContainer {
   display: flex;
   flex-direction: column;
+  padding: 0;
+  max-width: 100vw;
+  height: 100;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+.col {
+  padding: 0;
+  margin: 0;
+}
+
+#firstPageContainer {
+  position: relative;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
 }
 
 .anim-name-text .text-wrapper {
@@ -12,6 +36,7 @@
   line-height: 1;
   color: linen;
   margin-bottom: 3rem;
+  font-family: "Lato", sans-serif;
 }
 
 .line {
@@ -30,6 +55,7 @@
   line-height: 1;
   color: linen;
   margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .line2 {
@@ -48,6 +74,7 @@
   line-height: 1;
   color: linen;
   margin-bottom: 2rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .line3 {
@@ -56,6 +83,12 @@
   width: 2px;
   background-color: linen;
   transform-origin: 0 50%;
+}
+
+#secondPageContainer {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 /*!
